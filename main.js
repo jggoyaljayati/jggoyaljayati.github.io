@@ -1,4 +1,16 @@
-document.addEventListener("DOMContentLoaded", function () {});
+
+document.addEventListener("DOMContentLoaded", function () {
+var tab = document.querySelectorAll(".tab");
+console.log(tab);
+tab.forEach((thumbNail) => {
+	thumbNail.addEventListener("click", function (item) {
+		tab.forEach((i) => i.classList.remove("active"));
+		// var content = item.target.getAttribute("src");
+		console.log(thumbNail);
+		this.classList.toggle("active");
+		// img.setAttribute("src", content);
+	});
+});});
 
 function getWriting(event) {
 	var el = document.getElementById("lettername");
@@ -22,3 +34,4 @@ function getWriting(event) {
 		}
 	);
 }
+
