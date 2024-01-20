@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <div style="display: inline-flex;">
     <div class="sidebar">
         <nav class="nav">
             <ul>
@@ -21,9 +22,9 @@
             </ul>
         </nav>
     </div>
-    <div style="overflow-y: auto; width: 100%;">
-        <div id="home" style="height: 100%; width: 100%;">
-            <div  class="letter-image" onmouseenter="getWriting(event)">
+    <div style="width: 100vw;">
+        <div id="home" style="height: 100%; width: 100vw;">
+            <div  class="letter-image" onmouseleave="getWriting(this)">
                 <div class="animated-mail">
                     <div class="back-fold"></div>
                     <div class="letter">
@@ -56,10 +57,13 @@
                 <div class="shadow"></div>
             </div>
         </div>
-        <div id="about" style=" width: 100%; height: 100%;">WHAT UOPEWFEWfjbfkwurgkwrg</div>
+        <div id="about" style="width: 100vw; height: 100%;">
+            
+        </div>
         <div id="resume" style=" width: 100%; height: 100%;">WHAT UOPEWFEWfjbfkwurgkwrg</div>
         <div id="projects" style=" width: 100%; height: 100%;">WHAT UOPEWFEWfjbfkwurgkwrg</div>
         <div id="contact" style=" width: 100%; height: 100%;">WHAT UOPEWFEWfjbfkwurgkwrg</div>
+    </div>
     </div>
 </body>
 

@@ -1,21 +1,17 @@
-*{
+/* *{
     scroll-behavior: smooth;
-}
+} */
 body {
-    /* overflow: hidden; */
+    overflow: hidden;
     height: 100vh;
     background: #cfd4e1;
-    transition: all .4s ease-in-out;
+    transition: all .2s ease-in-out;
     display: flex;
 }
-/* html{
-    scroll-behavior: smooth;
-    -webkit-scroll-behavior: smooth
-} */
 .letter-image {
     position: relative;
     top: 60%;
-    left: 50%;
+    left: 55%;
     width: 500px;
     height: 300px;
     -webkit-transform: translate(-50%, -50%);
@@ -164,7 +160,7 @@ body {
     background: radial-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0));
 }
 
-.letter-image:hover {
+.letter-image:not(:hover){
     .animated-mail {
         transform: translateY(50px);
         -webkit-transform: translateY(50px);
@@ -235,7 +231,7 @@ body {
 
 .sidebar {
     /* position: -webkit-sticky; */
-    position: sticky;
+    position: fixed;
     width: 20%;
     height: 100vh;
     background: #312450;
